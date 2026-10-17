@@ -4,10 +4,10 @@
   <img src="https://img.shields.io/badge/Language-Rust-orange?style=for-the-badge&logo=rust" alt="Rust" />
   <img src="https://img.shields.io/badge/Build-Cargo-informational?style=for-the-badge&logo=rust" alt="Cargo" />
   <img src="https://img.shields.io/badge/Course-Duke_University_%2F_Coursera-blue?style=for-the-badge" alt="Course" />
-  <img src="https://img.shields.io/badge/Status-In_Progress-brightgreen?style=for-the-badge" alt="Status" />
+  <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge" alt="Status" />
 </p>
 
-A comprehensive repository containing hands-on labs, coding exercises, and practical implementations from the **Rust Bootcamp Specialization** offered by **Duke University** on Coursera.
+A comprehensive repository containing hands-on labs, coding exercises, and real-world practical implementations from the **Rust Bootcamp Specialization** offered by **Duke University** on Coursera.
 
 ---
 
@@ -17,7 +17,7 @@ A comprehensive repository containing hands-on labs, coding exercises, and pract
 RustCourse/
 ├── 📁 01-rust-fundamentals/         # Week 2: Core syntax, Control flow, Functions, Borrowing
 ├── 📁 02-rust-structs-types-enums/   # Week 3: Structs, Methods, Vectors, Strings, Enums
-└── 📁 03-applied-rust/               # Week 4: Applied Rust & CLI Projects (Coming soon)
+└── 📁 03-applied-rust/               # Week 4: Applied Rust, Library Development, CLI Tools & Testing
 ```
 
 ---
@@ -71,6 +71,20 @@ RustCourse/
 
 ---
 
+## 📦 Module 03: Applied Rust
+
+| # | Topic | Concepts Covered | Source Code |
+|:---:|:---|:---|:---:|
+| **01** | **Library Architecture** | Creating Rust libraries with `cargo new --lib`, library structure | [📂 View Code](./03-applied-rust/examples/cli-utils/src/lib.rs) |
+| **02** | **Code Documentation** | In-source documentation comments (`///`), documentation tests | [📂 View Code](./03-applied-rust/examples/cli-utils/src/lib.rs) |
+| **03** | **Modularization** | Splitting libraries into sub-modules (`colors.rs`, `config.rs`) | [📂 View Code](./03-applied-rust/examples/cli-utils/src/) |
+| **04** | **Visibility & Privacy** | Public vs private modules, functions, and struct fields (`pub`) | [📂 View Code](./03-applied-rust/examples/cli-utils/src/config.rs) |
+| **05** | **Testing Suite** | Unit tests, integration tests (`tests/`), assert macros | [📂 View Code](./03-applied-rust/examples/cli-utils/tests/) |
+| **06** | **Build Automation** | Using a `Makefile` to streamline build, test, and format pipelines | [📂 View Code](./03-applied-rust/examples/cli-utils/Makefile) |
+| 🧪 | **Practice Project Lab** | Creating a reusable Rust Library project using Cargo | [📄 Lab Details](./03-applied-rust/lab.md) |
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -89,7 +103,7 @@ rustc --version
 ```
 
 ### Running Any Exercise
-Navigate to any desired exercise directory and use Cargo to compile and run:
+Navigate to any desired exercise directory and use Cargo to compile, test, and run:
 
 ```bash
 # Example 1: Run Control Flow from Module 1
@@ -99,6 +113,10 @@ cargo run
 # Example 2: Run Defining Structs from Module 2
 cd 02-rust-structs-types-enums/examples/1-defining-structs/defining
 cargo run
+
+# Example 3: Test the CLI Utils Library from Module 3
+cd 03-applied-rust/examples/cli-utils
+cargo test
 ```
 
 ---
@@ -109,8 +127,10 @@ The course structure, original starter templates, and curriculum are part of the
 * **Reference Course Repositories:**
   * [alfredodeza/rust-fundamentals](https://github.com/alfredodeza/rust-fundamentals)
   * [alfredodeza/rust-structs-types-enums](https://github.com/alfredodeza/rust-structs-types-enums)
+  * [alfredodeza/applied-rust](https://github.com/alfredodeza/applied-rust)
 
 ---
 
-## 👤 Author
-- **H7 💜** ([@hashan-7](https://github.com/hashan-7))
+<p align="center">
+  <b>Developed by 💜 h7</b>
+</p>
